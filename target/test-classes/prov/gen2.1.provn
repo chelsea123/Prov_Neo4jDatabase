@@ -1,0 +1,15 @@
+document
+
+prefix ex  <http://example.org/>
+
+activity(ex:a1,-,-,[gen:concreteCardinality="50", gen:maxCardinality="10", gen:minCardinality="1"])
+entity(ex:e1,[gen:concreteCardinality="80", gen:maxCardinality="10", gen:minCardinality="1"])
+entity(ex:e2,[gen:concreteCardinality="70", gen:maxCardinality="10", gen:minCardinality="1"])
+entity(ex:e3,[gen:concreteCardinality="90", gen:maxCardinality="10", gen:minCardinality="1"])
+entity(ex:e4,[gen:concreteCardinality="50", gen:maxCardinality="10", gen:minCardinality="1"])
+wasGeneratedBy(ex:e1,ex:a1,-,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+wasGeneratedBy(ex:e2,ex:a1,-,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+used(ex:a1,ex:e3,2012-06-18T11:10:00,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+used(ex:a1,ex:e4,2012-06-18T11:10:00,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+
+endDocument

@@ -1,0 +1,17 @@
+document
+  entity(ex:papers)
+  activity(ex:writing)
+  entity(ex:article)
+  agent(ex:William)
+  agent(ex:Paolo)
+  entity(ex:dissertation)
+  
+  used(ex:writing, ex:dissertation, 2012-09-15T16:00:00)
+  wasGeneratedBy(ex:papers, ex:writing, 2012-09-21T20:00:00)
+  wasAssociatedWith(ex:writing, ex:William, -, [ prov:Role="author" ])
+  actedOnBehalfOf(ex:William, ex:Paolo)
+  wasAttributedTo(ex:papers, ex:William)
+  wasAttributedTo(ex:article, ex:William)
+endDocument
+
+

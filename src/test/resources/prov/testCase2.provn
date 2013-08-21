@@ -1,0 +1,71 @@
+document
+
+prefix xsd <http://www.w3.org/2001/XMLSchema>
+prefix prim <http://openprovenance.org/primitives#>
+prefix prov <http://www.w3.org/ns/prov#>
+prefix xsi <http://www.w3.org/2001/XMLSchema-instance>
+prefix pc1 <http://www.ipaw.info/pc1/>
+
+prefix ir <http://www.ir.ncl.ac.uk/>
+
+
+
+ //Activities 
+
+activity(ir:m1, [])
+activity(ir:c3, [])
+activity(ir:s1, [])
+activity(ir:s2, [])
+activity(ir:s3, [])
+activity(ir:c1, [])
+activity(ir:c2, [])
+
+
+
+ //Entities 
+
+entity(ir:d9, [])
+entity(ir:d10, [])
+entity(ir:d11, [])
+entity(ir:d12, [])
+entity(ir:d13, [])
+entity(ir:d14, [])
+entity(ir:d15, [])	
+entity(ir:d16, [])
+entity(ir:d17, [])
+entity(ir:d18, [])
+entity(ir:d19, [])
+entity(ir:d20, [])
+
+
+
+ //WasGeneratedBy 
+
+wasGeneratedBy(ir:d13, ir:m1,  - )
+wasGeneratedBy(ir:d14, ir:m1,  - )
+wasGeneratedBy(ir:d15, ir:s1,  - )
+wasGeneratedBy(ir:d16, ir:s2,  - )
+wasGeneratedBy(ir:d17, ir:s3,  - )
+wasGeneratedBy(ir:d18, ir:c1,  - )
+wasGeneratedBy(ir:d19, ir:c2,  - )
+wasGeneratedBy(ir:d20, ir:c3,  - )
+
+
+
+ //WasUsed 
+
+used(ir:m1, ir:d9,  - )
+used(ir:m1, ir:d10,  - )
+used(ir:m1, ir:d11,  - )
+used(ir:m1, ir:d12,  - )
+used(ir:s1, ir:d13,  - )
+used(ir:s1, ir:d14,  - )
+used(ir:s2, ir:d13,  - )
+used(ir:s2, ir:d14,  - )
+used(ir:s3, ir:d13,  - )
+used(ir:s3, ir:d14,  - )
+used(ir:c1, ir:d15,  - )
+used(ir:c2, ir:d16,  - )
+used(ir:c3, ir:d17,  - )
+
+endDocument

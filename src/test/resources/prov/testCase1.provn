@@ -1,0 +1,70 @@
+document
+
+prefix xsd <http://www.w3.org/2001/XMLSchema>
+prefix prim <http://openprovenance.org/primitives#>
+prefix prov <http://www.w3.org/ns/prov#>
+prefix xsi <http://www.w3.org/2001/XMLSchema-instance>
+prefix pc1 <http://www.ipaw.info/pc1/>
+
+prefix ir <http://www.ir.ncl.ac.uk/>
+
+//
+// entities
+//
+
+
+// summaries
+
+entity(AJCSummary)
+entity(BNCSummary)
+
+// intermediate merged results
+
+entity(report1)
+entity(report2)
+entity(report3)
+
+// final results
+
+entity(adviceReports)
+
+//
+// activities
+//
+
+// merging
+activity(reportEditing)
+
+// analytics activity
+
+activity(analytics1)
+activity(analytics2)
+activity(analytics3)
+
+// merging
+
+// analytics uses
+ 
+used(analytics1,AJCSummary,-)
+used(analytics2,AJCSummary,-)
+used(analytics2,BNCSummary,-)
+used(analytics3,BNCSummary,-)
+
+// analytics generates
+
+wasGeneratedBy(report1,analytics1,2013-06-18T11:10:00)
+wasGeneratedBy(report2,analytics2,2013-06-18T11:10:00)
+wasGeneratedBy(report3,analytics3,2013-06-18T11:10:00)
+
+// final merging
+
+used(reportEditing,report1,-)
+used(reportEditing,report2,-)
+used(reportEditing,report3,-)
+
+// generating the final result
+
+wasGeneratedBy(adviceReports, reportEditing, 2013-06-18T11:10:00)
+
+
+endDocument

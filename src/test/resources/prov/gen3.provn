@@ -1,0 +1,14 @@
+document
+
+prefix ex  <http://example.org/>
+
+activity(ex:a,-,-,[gen:concreteCardinality='5', gen:maxCardinality='10', gen:minCardinality='1'])
+agent(ex:ag)
+entity(ex:e1,[gen:concreteCardinality="8", gen:maxCardinality="10", gen:minCardinality="1"])
+entity(ex:e2,[gen:concreteCardinality="7", gen:maxCardinality="10", gen:minCardinality="1"])
+wasGeneratedBy(ex:e1,ex:a,-,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+used(ex:a,ex:e2,2012-06-18T11:10:00,[gen:concreteSaturation="0.2", gen:maxSaturation="0.2", gen:minSaturation="0.1"])
+wasAttributedTo(ex:e1, ex:ag, [gen:concreteSaturation="0.2"])
+wasAssociatedWith(ex:a,ex:ag, _, [gen:concreteSaturation="0.2"])
+
+endDocument

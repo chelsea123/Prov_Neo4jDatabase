@@ -13,4 +13,4 @@ Apache Maven could download from http://maven.apache.org/download.cgi
 Dependencies used in maven
 ==================
 The dependencies used in this tool is:
-<div>1. neo4j: 1.9</div><div>2. antlr-runtime: 3.4</div><div>3. jersey-client: 1.12]</div><div>4. prov-xml: 0.2.3</div><div>5. prov-n: 0.2.3</div><div>6. jaxb2-basics: 0.6.4</div><div><br></div>
+<div>1. neo4j: 1.9</div><div>2. antlr-runtime: 3.4</div><div>3. jersey-client: 1.12</div><div>4. prov-xml: 0.2.3</div><div>5. prov-n: 0.2.3</div><div>6. jaxb2-basics: 0.6.4</div><div><br></div>
